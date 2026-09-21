@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+@source '../**/*.vue';
+@source '../views/**/*.blade.php';
+
+@theme {
+    --font-sans: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+}
+
+html,
+body {
+    background-color: #f8fafc;
+}
