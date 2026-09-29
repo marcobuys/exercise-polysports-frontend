@@ -28,6 +28,12 @@ You need Docker Desktop (or Docker Engine) with Compose. Then, from the repo roo
 ./up.sh
 ```
 
+> **On Windows, clone and run this from the WSL2 filesystem** — e.g. `~/projects`
+> inside your Ubuntu/WSL distro, with Docker Desktop's **WSL2 backend** enabled.
+> Don't use a Windows path such as `C:\…` or `/mnt/c/…`: from there the app loads
+> very slowly and your code changes may not be picked up at all (not even after a
+> refresh).
+
 The first run pulls images, builds the container, installs PHP + Node
 dependencies and seeds the database — that takes a few minutes. When it's done:
 

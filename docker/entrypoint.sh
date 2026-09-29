@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 cd /var/www/html
-[ -d vendor ] || composer install --no-interaction --prefer-dist
+[ -f vendor/autoload.php ] || composer install --no-interaction --prefer-dist
 [ -d node_modules ] || npm install
 
 # Make sure the app can boot cleanly even before ./up.sh finishes — otherwise a
